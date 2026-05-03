@@ -1,0 +1,22 @@
+{
+  "name": "eleventy-plugin-jcomments-mini",
+  "version": "1.0.0",
+  "description": "Fetch comments from jcomments-mini and bake them into your Eleventy site",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/plugin.test.js"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "comments",
+    "commenting",
+    "jcomments",
+    "jcomments-mini"
+  ],
+  "author": "Tomas Kohl <tomas@tomaskohl.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
