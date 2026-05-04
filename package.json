@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-jcomments-mini",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fetch comments from jcomments-mini and bake them into your Eleventy site",
   "main": "index.js",
   "scripts": {

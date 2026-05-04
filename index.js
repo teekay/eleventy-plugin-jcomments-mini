@@ -8,10 +8,10 @@ module.exports = function (eleventyConfig, options = {}) {
   });
 
   const commentsForPagePartial = (baseUrl, permalink) => commentsForPage(pathToCache, baseUrl, permalink);
-  const commentsRenderedPartial = (comments) => commentsRendered(comments, dateFormat, noFollow);
+  const commentsRenderedPartial = (comments, pageUrl) => commentsRendered(comments, dateFormat, noFollow, apiUrl, pageUrl);
 
   eleventyConfig.addNunjucksShortcode('commentsForPage', function (baseUrl, permalink) {
-    return commentsRenderedPartial(commentsForPagePartial(baseUrl, permalink));
+    return commentsRenderedPartial(commentsForPagePartial(baseUrl, permalink), baseUrl + permalink);
   });
 };
 

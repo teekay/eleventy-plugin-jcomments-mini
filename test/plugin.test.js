@@ -32,8 +32,9 @@ assert.strictEqual(page1Slash.length, 2, 'trailing slash should still match');
 
 // commentsRendered produces expected HTML structure
 const html = commentsRendered(page1, 'en-US', false);
-assert(html.includes('<section class="jcomments comments">'), 'should have section wrapper');
+assert(html.includes('<section class="jcomments comments"'), 'should have section wrapper');
 assert(html.includes('data-id="aaa"'), 'should include comment id');
+assert(html.includes('data-created-at="2026-01-01T10:00:00.000Z"'), 'should include createdAt attribute');
 assert(html.includes('by Alice'), 'should include author');
 assert(html.includes('Hello world'), 'should include text');
 assert(html.includes('Line one<br>Line two'), 'should convert newlines to <br>');
